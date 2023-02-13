@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+// Prototipos 
+int triangulo (int base, int altura);
+bool primo(int numero);
+int pares(int numero1, int numero2);
+
+int main()
+{
+    int opciones, base, altura, area;
+    do {
+        cout <<"MENÙ\n";
+        cout << "1. Àrea de un triangulo: \n"; 
+        cout << "2. Nùmero primo: \n";
+        cout << "3. Nùmeros pares: \n";
+        cout << "OPCIÒN: \n";
+        cout << "0. SALIR \n";
+        cin >> opciones;
+    switch (opciones) {
+        case 1: 
+            cout << "Ingrese la base: ";
+            cin >> base;
+            cout << "Ingrese la altura: ";
+            cin >> altura;
+            cout << "El area es: " << triangulo(base, altura);
+            break; 
+        case 2: 
+            primo();
+            break; 
+        case 3: 
+            pares();
+            break;
+        case 0:
+            cout << "Salir \n";
+            break; 
+        }
+    }
+    return 0;
+}
+
+int triangulo(int base, int altura) {
+    int area;
+    area = (base * altura) / 2;
+}
+
+bool primo(int numero) {
+    if (numero == 0 || numero == 1) return false;
+    for (int x = 2; x < numero / 2; x++) {
+}
+
+int pares(int numero1, int numero2) {
+
+    if ()
+}
